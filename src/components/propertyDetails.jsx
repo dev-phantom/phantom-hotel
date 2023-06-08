@@ -37,7 +37,7 @@ const PropertyDetails = () => {
         <img src={property.propertyImg} alt="" className="w-[80%] h-[60vh]" />
       </div>
 
-      <div className="mt-10 px-40 capitalize text-white ">
+      <div className="mt-10 px-10 lg:px-40 capitalize text-white ">
         <div className="text-[2.5rem] font-medium text-white">
           About the house
         </div>
