@@ -4,7 +4,7 @@
             "brandLogo" : "https://res.cloudinary.com/phantom1245/image/upload/v1672831326/rental/logo_1_glax7q.png"
         },
         {
-            "navbarLink" : ["home", "Tenants", "Contact Us"]
+            "navbarLink" : ["home", "landlord", "tenants", "Contact Us"]
         }
     ],
 
@@ -40,6 +40,16 @@
             },
             {
                 "id" : 6,
+                "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842736/rental/Vector_7_kfcdqm.png",
+                "title" : "Stay Safe! Save Money!"
+            },
+            {
+                "id" : 7,
+                "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842736/rental/Vector_7_kfcdqm.png",
+                "title" : "Stay Safe! Save Money!"
+            },
+            {
+                "id" : 8,
                 "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842734/rental/Vector_4_g7bvg5.png",
                 "title" : "Pay for what you use !"
             }

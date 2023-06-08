@@ -2,13 +2,14 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
+  Navigate,
 } from "react-router-dom";
 
 import App from "./App";
-
 import Home from "./pages/home/Home";
 import PropertyDetails from "./components/propertyDetails";
 import Cart from "./pages/cart/Cart";
+import Tenant from "./pages/tenant/tenant";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,7 +18,12 @@ const router = createBrowserRouter(
 
       <Route path="/property/:id" element={<PropertyDetails />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/tenants" element={<Tenant />} />
+
+      {/* Redirect /home to / */}
+      <Route path="/home" element={<Navigate to="/" />} />
     </Route>
   )
 );
+
 export default router;

@@ -38,6 +38,7 @@ const PropertiesList = () => {
                         <Properties />
                     </Tab.Panel>
                 </Tab.Panels>
+                
 
                 <div className='flex justify-center items-center lg:px-20 xl:px-20 py-10'>
                     <Tab.List className="flex w-1/2 space-x-1 rounded-xl border-4 text-primary p-1">

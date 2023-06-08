@@ -4,18 +4,38 @@ import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
+  const [showModal, setShowModal] = useState(false); // State for modal visibility
   const navigate = useNavigate(); // Initialize the useNavigate hook
-  
+
   useEffect(() => {
     const savedCart = localStorage.getItem("cart");
     if (savedCart) {
       setCartItems(JSON.parse(savedCart));
     }
   }, []);
-  
+
   const handleRoute = (path) => {
     navigate(path); // Use the navigate function to navigate to the specified path
   };
+
+  const handleRemoveItem = (id) => {
+    const updatedCart = cartItems.filter((item) => item.id !== id);
+    setCartItems(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
+
+  const handleCheckout = () => {
+    // Check if user is signed in
+    const isUserSignedIn = true; // Replace with your logic to check if user is signed in
+    if (isUserSignedIn) {
+      // User is signed in, proceed to checkout
+      setShowModal(true);
+    } else {
+      // User is not signed in, show the sign-in modal
+      setShowModal(true);
+    }
+  };
+
   // Filter unique items by ID
   const uniqueItems = cartItems.reduce((unique, item) => {
     return unique.find((i) => i.id === item.id) ? unique : [...unique, item];
@@ -60,10 +80,15 @@ const Cart = () => {
                     </p>
                     <p className="text-lg text-gray-600">${item.price}/month</p>
                   </div>
-                  <div className="flex flex-row gap-4">
+                  <div className="flex flex-row justify-center items-center gap-4">
                     <div>{item.price}</div>
                     <div>
-                      <button>Check Out</button>
+                      <button
+                        onClick={() => handleRemoveItem(item.id)}
+                        className="text-white bg-red-500 px-4 py-2 rounded-lg"
+                      >
+                        Remove
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -81,6 +106,40 @@ const Cart = () => {
           <div className="py-2 text-white font-bold text-3xl text-right">
             Total (incl. VAT): ${totalPriceWithVat}
           </div>
+
+          {/* Checkout button */}
+          <button
+            onClick={handleCheckout}
+            className="text-white bg-blue-500 px-4 py-2 rounded-lg mt-4"
+          >
+            Checkout
+          </button>
+
+          {/* Modal */}
+          {showModal && (
+            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+              <div className="bg-white p-4 rounded-lg">
+                <h2 className="text-2xl font-semibold mb-2">
+                  Sign in to proceed
+                </h2>
+                <p>Please sign in to continue with the checkout process.</p>
+                <div className="flex gap-2 justify-end mt-4">
+                  <button
+                    onClick={() => navigate("/tenants")}
+                    className="text-white bg-gray-500 px-4 py-2 rounded-lg"
+                  >
+                    sign in
+                  </button>
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="text-white bg-gray-500 px-4 py-2 rounded-lg"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
