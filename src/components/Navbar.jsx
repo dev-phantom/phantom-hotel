@@ -110,17 +110,18 @@ const Navbar = () => {
                   Home
                 </div>
               </Menu.Item>
+
               <Menu.Item>
                 <div
-                  onClick={() => handleClick("/cart")}
-                  className="text-md font-semibold group flex w-full items-center px-[20px] py-[15px] cursor-pointer"
+                  onClick={() => handleClick("/landlord")}
+                  className="text-sm group flex w-full items-center px-[20px] py-[15px] cursor-pointer"
                 >
-                cart(<span>{cartItems.length}</span>)
+                  Landlord
                 </div>
               </Menu.Item>
               <Menu.Item>
                 <div
-                  onClick={() => handleClick("/")}
+                  onClick={() => handleClick("/tenant")}
                   className="text-sm group flex w-full items-center px-[20px] py-[15px] cursor-pointer"
                 >
                   Tenants
@@ -132,6 +133,14 @@ const Navbar = () => {
                   className="text-sm group flex w-full items-center px-[20px] py-[15px] cursor-pointer"
                 >
                   Contact Us
+                </div>
+              </Menu.Item>
+              <Menu.Item>
+                <div
+                  onClick={() => handleClick("/cart")}
+                  className="text-md font-semibold group flex w-full items-center px-[20px] py-[15px] cursor-pointer"
+                >
+                  cart(<span>{cartItems.length}</span>)
                 </div>
               </Menu.Item>
             </Menu.Items>
