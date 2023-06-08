@@ -1,0 +1,105 @@
+{
+    "nav" : [
+        {
+            "brandLogo" : "https://res.cloudinary.com/phantom1245/image/upload/v1672831326/rental/logo_1_glax7q.png"
+        },
+        {
+            "navbarLink" : ["home", "Tenants", "Contact Us"]
+        }
+    ],
+
+    "Offers" : [
+        {
+            "offerImg" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842945/rental/unsplash_oGmf8o53LeE_vptqc7.png"
+        },
+        [
+            {
+                "id" : 1,
+                "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842502/rental/Vector_tugssj.png",
+                "title" : "Pay as Little as possible!"
+            },
+            {
+                "id" : 2,
+                "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842734/rental/Vector_2_wfkr09.png",
+                "title" : "Enjoy wisdom of community!"
+            },
+            {
+                "id" : 3,
+                "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842502/rental/Vector_tugssj.png",
+                "title" : "Let's somebody else take care of Landlord!"
+            },
+            {
+                "id" : 4,
+                "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842735/rental/Vector_6_c4i7mh.png",
+                "title" : "Enjoy peaceful Environment!"
+            },
+            {
+                "id" : 5,
+                "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842736/rental/Vector_7_kfcdqm.png",
+                "title" : "Stay Safe! Save Money!"
+            },
+            {
+                "id" : 6,
+                "icon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672842734/rental/Vector_4_g7bvg5.png",
+                "title" : "Pay for what you use !"
+            }
+        ]
+        
+    ],
+    "properties" : [
+        {
+            "id":1,
+            "propertyImg" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847382/rental/unsplash_Eh_It1hg4Hs_mb95sr.png",
+            "address" : "2578 Folsom street, san francisco, CA, 94110",
+            "room" : "Public Room",
+            "price" : 4500,
+            "bedIcon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847365/rental/Path_hjbhq6.png",
+            "shape" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847371/rental/Shape_rbqjfg.png"
+        },
+        {
+            "id":2,
+            "propertyImg" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847377/rental/unsplash_2d4lAQAlbDA_sfwjsd.png",
+            "address" : "2578 Folsom street, san francisco, CA, 94110",
+            "room" : "Private Room",
+            "price" : 1200,
+            "bedIcon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847365/rental/Path_hjbhq6.png",
+            "shape" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847371/rental/Shape_rbqjfg.png"
+        },
+        {
+            "id":3,
+            "propertyImg" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847384/rental/unsplash_T6d96Qrb5MY_vb5r5l.png",
+            "address" : "2578 Folsom street, san francisco, CA, 94110",
+            "room" : "Private Room",
+            "price" : 5000,
+            "bedIcon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847365/rental/Path_hjbhq6.png",
+            "shape" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847371/rental/Shape_rbqjfg.png"
+        },
+        {
+            "id":4,
+            "propertyImg" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847385/rental/unsplash_KQgrVfR3r74_wjqguq.png",
+            "address" : "2578 Folsom street, san francisco, CA, 94110",
+            "room" : "Public Room",
+            "price" : 9200,
+            "bedIcon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847365/rental/Path_hjbhq6.png",
+            "shape" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847371/rental/Shape_rbqjfg.png"
+        },
+        {
+            "id":5,
+            "propertyImg" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847386/rental/unsplash_UV81E0oXXWQ_drlxyh.png",
+            "address" : "2578 Folsom street, san francisco, CA, 94110",
+            "room" : "Public Room",
+            "price" : 1200,
+            "bedIcon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847365/rental/Path_hjbhq6.png",
+            "shape" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847371/rental/Shape_rbqjfg.png"
+        },
+        {
+            "id":6,
+            "propertyImg" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847385/rental/unsplash_uDtC-1NLEzU_ubqr05.png",
+            "address" : "2578 Folsom street, san francisco, CA, 94110",
+            "room" : "Private Room",
+            "price" : 1050,
+            "bedIcon" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847365/rental/Path_hjbhq6.png",
+            "shape" : "https://res.cloudinary.com/phantom1245/image/upload/v1672847371/rental/Shape_rbqjfg.png"
+        }
+    ]
+}

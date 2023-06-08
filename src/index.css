@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: dmsan;
+    src: url(./assets/fonts/sandm.ttf);
+}
+@font-face {
+    font-family: inter;
+    src: url(./assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: interb;
+    src: url(./assets/fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: popins;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+.button {
+  background-color: #fca311;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #e69500;
+}
