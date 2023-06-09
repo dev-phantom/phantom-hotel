@@ -33,12 +33,12 @@ const PropertyDetails = () => {
         <Navbar />
       </div>
 
-      <div className="w-full flex justify-center items-center mt-8">
-        <img src={property.propertyImg} alt="" className="w-[80%] h-[60vh]" />
+      <div className="w-full flex justify-center px-5 lg:px-0 items-center mt-8">
+        <img src={property.propertyImg} alt="" className="w-full h-auto md:w-[70%] lg:w-[80%] lg:h-[60vh]" />
       </div>
 
-      <div className="mt-10 px-40 capitalize text-white ">
-        <div className="text-[2.5rem] font-medium text-white">
+      <div className="mt-10 px-5 lg:px-40 capitalize text-white ">
+        <div className="lg:text-[2.5rem] text-[2rem] font-medium text-white">
           About the house
         </div>
 
@@ -46,7 +46,7 @@ const PropertyDetails = () => {
         <div className="font-normal pt-2 capitalize font-dmsan text-[18px] text-[#818181]">
           {property.room}
         </div>
-        <p className="w-[80%] lg:w-[60%] py-4 text-xl text-orange-100">
+        <p className="w-[90%] lg:w-[60%] py-4 text-xl text-orange-100">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus,
           non dolore incidunt ipsum laboriosam quibusdam a, officia facere
           accusamus, nobis iure tempora debitis nostrum rem. Architecto quia
