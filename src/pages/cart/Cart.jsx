@@ -66,26 +66,37 @@ const Cart = () => {
             uniqueItems.map((item) => (
               <div
                 key={item.id}
-                onClick={() => handleRoute(`/property/${item.id}`)}
                 rel="noopener noreferrer"
                 className="bg-white rounded-lg shadow-lg p-4 mb-4"
               >
-                <div className="flex flex-row justify-between items-center">
-                  <div>
-                    <img src={item.propertyImg} alt="" className="w-[4.5rem]" />
+                <div className="flex  justify-between items-center">
+                  <div
+                    onClick={() => handleRoute(`/property/${item.id}`)}
+                    className="flex flex-row gap-2 cursor-pointer justify-between items-center"
+                  >
+                    <div className="">
+                      <img
+                        src={item.propertyImg}
+                        alt=""
+                        className="hidden sm:flex md:w-[4.5rem] w-[7rem] "
+                      />
+                    </div>
+                    <div>
+                      <p className="md:text-xl text-md  font-semibold text-gray-800">
+                        {item.address}
+                      </p>
+                      <p className="text-lg text-gray-600">
+                        ${item.price}/month
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xl font-semibold text-gray-800">
-                      {item.address}
-                    </p>
-                    <p className="text-lg text-gray-600">${item.price}/month</p>
-                  </div>
+
                   <div className="flex flex-row justify-center items-center gap-4">
                     <div>{item.price}</div>
                     <div>
                       <button
                         onClick={() => handleRemoveItem(item.id)}
-                        className="text-white bg-red-500 px-4 py-2 rounded-lg"
+                        className="text-white z-[999] bg-red-500 px-4 py-2 rounded-lg"
                       >
                         Remove
                       </button>
@@ -108,12 +119,14 @@ const Cart = () => {
           </div>
 
           {/* Checkout button */}
-          <button
-            onClick={handleCheckout}
-            className="text-white bg-blue-500 px-4 py-2 rounded-lg mt-4"
-          >
-            Checkout
-          </button>
+          <div className="flex  justify-end items-end ">
+            <button
+              onClick={handleCheckout}
+              className="text-white bg-orange-500 px-6 py-3 rounded-lg mt-4"
+            >
+              Checkout
+            </button>
+          </div>
 
           {/* Modal */}
           {showModal && (
