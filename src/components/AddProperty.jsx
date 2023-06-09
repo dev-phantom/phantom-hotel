@@ -6,8 +6,8 @@ const AddProperty = () => {
     const [price, setPrice] = useState("")
     const [unit, setUnit] = useState(0)
     return ( 
-        <div className="w-full px-4 overflow-x-hidden lg:px-40 lg:px-40 pb-[10rem]"  data-aos="zoom-in" data-aos-duration="2000">
-            <div className="w-full pb-10 shadow-[0_4px_63px_rgba(0,0,0,0.15)] rounded-[10px]">
+        <div className="w-full bg-[#222] px-4 overflow-x-hidden lg:px-40 lg:px-40 pb-[10rem]" >
+            <div className="w-full pb-10 shadow-[0_4px_63px_rgba(0,0,0,0.15)] border-2 border-gray-500 rounded-[10px]">
                 <div>
                     <h3 className="font-popins font-bold py-10 text-primary text-center text-[28px]">Add A New Property</h3>
                 </div>
@@ -15,7 +15,7 @@ const AddProperty = () => {
                     <div className='grid lg:grid-cols-3 xl:grid-cols-3 grid-cols-1 pt-3 px-10 gap-8'>
                         <div>
                             <div className='py-2 '>
-                                <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>name <span className='text-primary'>*</span></label>
+                                <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>name <span className='text-primary'>*</span></label>
                             </div>
                             <div className="">
                                 <input
@@ -29,7 +29,7 @@ const AddProperty = () => {
                         </div>
                         <div>
                             <div className='py-2 '>
-                                <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>Address <span className='text-primary'>*</span></label>
+                                <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>Address <span className='text-primary'>*</span></label>
                             </div>
                             <div className="">
                                 <input
@@ -43,7 +43,7 @@ const AddProperty = () => {
                         </div>
                         <div>
                             <div className='py-2 '>
-                                <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>Unit Number <span className='text-primary'>*</span></label>
+                                <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>Unit Number <span className='text-primary'>*</span></label>
                             </div>
                             <div className="">
                                 <input
@@ -57,7 +57,7 @@ const AddProperty = () => {
                         </div>
                         <div>
                             <div className='py-2 '>
-                                <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>city <span className='text-primary'>*</span></label>
+                                <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>city <span className='text-primary'>*</span></label>
                             </div>
                             <div >
                                 <Dropdown value={"select city"} />
@@ -65,7 +65,7 @@ const AddProperty = () => {
                         </div>
                         <div>
                             <div className='py-2 '>
-                                <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>state <span className='text-primary'>*</span></label>
+                                <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>state <span className='text-primary'>*</span></label>
                             </div>
                             <div >
                                 <Dropdown value={"select state"} />
@@ -73,7 +73,7 @@ const AddProperty = () => {
                         </div>
                         <div>
                             <div className='py-2 '>
-                                <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>room type <span className='text-primary'>*</span></label>
+                                <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>room type <span className='text-primary'>*</span></label>
                             </div>
                             <div >
                                 <Dropdown value={"select room type"} />
@@ -82,7 +82,7 @@ const AddProperty = () => {
                         
                         <div>
                             <div className='py-2 '>
-                                <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>price <span className='text-primary'>*</span></label>
+                                <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>price <span className='text-primary'>*</span></label>
                             </div>
                             <div className="">
                                 <input
@@ -96,7 +96,7 @@ const AddProperty = () => {
                         </div>
                         <div>
                             <div className='py-2 '>
-                                <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>room type <span className='text-primary'>*</span></label>
+                                <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>room type <span className='text-primary'>*</span></label>
                             </div>
                             <div >
                                 <Dropdown value={"select room type"} />
@@ -105,13 +105,13 @@ const AddProperty = () => {
                     </div>
                     <div className='px-10'>
                        <div className='py-2 '>
-                            <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>Description <span className='text-primary'>*</span></label>
+                            <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>Description <span className='text-primary'>*</span></label>
                         </div> 
                         <textarea placeholder="Enter Description" className='w-full h-[151px] bg-[#F9F9F9] rounded border-2 p-4 border-[#E6E6E6]'></textarea>
                     </div>
                     <div className='px-10'>
                        <div className='py-2 '>
-                            <label htmlFor="" className='text-secondary font-semibold font-popins text-[17px] capitalize'>Upload Photos</label>
+                            <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>Upload Photos</label>
                         </div> 
                         <div className="">
                             <input

@@ -15,8 +15,8 @@ const Offers = () => {
     }, []);
 
     return ( 
-        <div className="w-full py-20 px-8 xl:px-0 lg:px-0 lg:pl-20 xl:pl-20">
-            <h2 className="font-interb capitalize text-[26px] text-secondary"><span className="xl:border-b-2 border-b-2 lg:pb-2 w-full border-primary">minimum living cost</span> takes care of everything</h2>
+        <div className="w-full bg-[#222] py-20 px-8 xl:px-0 lg:px-0 lg:pl-20 xl:pl-20">
+            <h2 className="font-interb capitalize text-[26px] text-white"><span className="xl:border-b-2 border-b-2 lg:pb-2 w-full border-primary">minimum living cost</span> takes care of everything</h2>
             <div className='pt-2 flex flex-col lg:flex-row xl:flex-row justify-center '>
                 <div data-aos="fade-up-right" data-aos-duration="2000">
                     <img src={offer[0].offerImg} alt="" />
@@ -28,7 +28,7 @@ const Offers = () => {
                                 <div className=' p-4 flex justify-center items-center shadow-[0_12px_19px_rgba(0,0,0,0.15)] rounded w-[77px] rounded-[10px]'>
                                     <img src={offers.icon} alt="" />
                                 </div>
-                                <div className="pt-2 font-inter text-secondary leading-[35px] font-semibold capitalize font-normal text-[16px]">{offers.title}</div>
+                                <div className="pt-2 font-inter text-white leading-[35px] font-semibold capitalize font-normal text-[16px]">{offers.title}</div>
                             </div>
                         )
                     })}
