@@ -65,7 +65,7 @@ const Home = () => {
                 <section>
                     <About />
                 </section>
-                <section data-aos="zoom-in" data-aos-duration="2000">
+                <section >
                     <AddProperty />
                 </section>
                 <section>
