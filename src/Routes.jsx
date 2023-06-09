@@ -16,7 +16,7 @@ import Properties from "./pages/properties/properties";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App />} errorElement={<ErrorPage />}>
+    <Route path="/" element={<App />} errorElement={<ErrorPage />}>
       <Route errorElement={<ErrorPage />} />
       <Route index element={<Home />} />
 

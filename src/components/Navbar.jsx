@@ -121,7 +121,7 @@ const Navbar = () => {
               </Menu.Item>
               <Menu.Item>
                 <div
-                  onClick={() => handleClick("/tenant")}
+                  onClick={() => handleClick("/tenants")}
                   className="text-sm group flex w-full items-center px-[20px] py-[15px] cursor-pointer"
                 >
                   Tenants
@@ -129,10 +129,10 @@ const Navbar = () => {
               </Menu.Item>
               <Menu.Item>
                 <div
-                  onClick={() => handleClick("/github")}
+                  onClick={() => handleClick("/properties")}
                   className="text-sm group flex w-full items-center px-[20px] py-[15px] cursor-pointer"
                 >
-                  Contact Us
+                  properties
                 </div>
               </Menu.Item>
               <Menu.Item>
