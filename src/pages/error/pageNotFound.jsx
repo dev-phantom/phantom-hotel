@@ -1,10 +1,10 @@
-import { useRouteError } from 'react-router-dom'
-import Navbar from '../../components/Navbar'
-import { useNavigate } from 'react-router-dom';
+import { useRouteError } from "react-router-dom";
+import Navbar from "../../common/Navbar";
+import { useNavigate } from "react-router-dom";
 
 export default function ErrorPage() {
-    const error = useRouteError();
-    let navigate = useNavigate();
+  const error = useRouteError();
+  let navigate = useNavigate();
   return (
     <div>
       <div className="bg-[#222]">

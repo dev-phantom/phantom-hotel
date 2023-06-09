@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import data from "../data/data.json";
-import Navbar from "./Navbar";
+import Navbar from "../common/Navbar";
 
 const PropertyDetails = () => {
   const { id } = useParams();
@@ -23,8 +23,7 @@ const PropertyDetails = () => {
     setIsLoading(true);
     dispatch({ type: "ADD", payload: property });
     localStorage.setItem("cart", JSON.stringify(state));
-        setIsLoading(false);
-
+    setIsLoading(false);
   };
 
   return (
@@ -34,7 +33,11 @@ const PropertyDetails = () => {
       </div>
 
       <div className="w-full flex justify-center px-5 lg:px-0 items-center mt-8">
-        <img src={property.propertyImg} alt="" className="w-full h-auto md:w-[70%] lg:w-[80%] lg:h-[60vh]" />
+        <img
+          src={property.propertyImg}
+          alt=""
+          className="w-full h-auto md:w-[70%] lg:w-[80%] lg:h-[60vh]"
+        />
       </div>
 
       <div className="mt-10 px-5 lg:px-40 capitalize text-white ">

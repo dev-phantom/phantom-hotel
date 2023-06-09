@@ -54,7 +54,7 @@ const Navbar = () => {
             })}
           </div>
           <div
-            onClick={() => handleClick("cart")}
+            onClick={() => handleClick("/cart")}
             className="cursor-pointer text-white font-dmsan px-4   font-normal capitalize text-[18px] "
           >
             cart(<span>{cartItems.length}</span>)
@@ -69,7 +69,7 @@ const Navbar = () => {
             <img src={logo} alt="logo image" className="w-/2 " />
           </a>
         </div>
-        <Menu as="div" className="flex z-50 text-left relative">
+        <Menu as="div" className="flex z-[999] text-left relative">
           <Menu.Button>
             <div className="text-white">
               <svg
@@ -95,10 +95,10 @@ const Navbar = () => {
             leave="transition ease-in duration-75"
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
-            className="z-40"
+            className="z-[999]"
           >
             <Menu.Items
-              className="z-[999] text-secondary shadow-lg absolute right-0 top-10 w-56 origin-top-right divide-y  px-2 rounded-xl bg-violet-500 ring-1 ring-black ring-opacity-5 focus:outline-none"
+              className=" text-secondary shadow-lg absolute right-0 top-10 w-56 origin-top-right divide-y  px-2 rounded-xl bg-violet-500 ring-1 ring-black ring-opacity-5 focus:outline-none"
               data-aos="zoom-in"
               data-aos-duration="2000"
             >

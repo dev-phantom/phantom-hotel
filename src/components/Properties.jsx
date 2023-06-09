@@ -62,7 +62,7 @@ const Properties = () => {
                 </div>
                 <div className="flex justify-center w-full items-center">
                   <button
-                    className="bg-[#F4511E] w-[90%] py-3 rounded-lg z-[999] my-2"
+                    className="bg-[#F4511E] w-[90%] text-white py-3 rounded-lg z-[999] my-2"
                     onClick={() => addToCart(property)}
                   >
                     Add To Cart
