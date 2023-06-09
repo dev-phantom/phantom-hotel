@@ -4,7 +4,7 @@
             "brandLogo" : "https://res.cloudinary.com/phantom1245/image/upload/v1672831326/rental/logo_1_glax7q.png"
         },
         {
-            "navbarLink" : ["home", "landlord", "tenants", "Contact Us"]
+            "navbarLink" : ["home", "landlord", "tenants", "properties"]
         }
     ],
 
