@@ -49,10 +49,10 @@ const Properties = () => {
                   </div>
                   <div className="px-[8rem] flex lg:hidden lg:px-0 md:px-0 xl:px-0"></div>
                   <div className="px-4 pt-2 pb-5">
-                    <div className="pt-2 font-dmsan text-black font-bold capitalize text-[18px]">
+                    <div className="pt-2 font-dmsan text-white font-bold capitalize text-[18px]">
                       {property.address}
                     </div>
-                    <div className="font-normal pt-2 capitalize font-dmsan text-[18px] text-[#818181]">
+                    <div className="font-normal pt-2 capitalize font-dmsan text-[18px] text-gray-300">
                       {property.room}
                     </div>
                     <div className="font-bold pt-2 capitalize font-dmsan text-[22px] text-[#F4511E]">

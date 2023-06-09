@@ -10,10 +10,10 @@ const PropertiesList = () => {
     }
 
     return ( 
-        <div className="w-full overflow-x-hidden xl:pl-8 xl:pl-8 bg-[#F5F5F5] pt-20 pb-10">
+        <div className="w-full overflow-x-hidden xl:pl-8 xl:pl-8 bg-[#272727] pt-20 pb-10">
             <div className="w-full flex justify-center lg:justify-between xl:justify-between items-center pr-0 lg:pr-20 xl:pr-20">
                 <div>
-                    <h2 className="font-interb text-center lg:text-left xl:text-left capitalize text-[26px] text-secondary"><span className="border-b-2 pb-2 w-full border-primary">list</span> of properties</h2>
+                    <h2 className="font-interb text-center lg:text-left xl:text-left capitalize text-[26px] text-white"><span className="border-b-2 pb-2 w-full border-primary">list</span> of properties</h2>
                 </div>
                 <div className='hidden lg:flex xl:flex'>
                     <button className="bg-primary w-[200px] h-[65px] flex justify-center items-center  rounded-[5px]">View All Property</button>

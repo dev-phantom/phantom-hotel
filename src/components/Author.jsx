@@ -10,7 +10,7 @@ const Author = () => {
         AOS.refresh();
     }, []);
     return ( 
-        <div className="w-full overflow-x-hidden flex flex-col-reverse lg:flex-row xl:flex-row mb-8 bg-[#f4511e] bg-opacity-10 ">
+        <div className="w-full overflow-x-hidden flex flex-col-reverse lg:flex-row xl:flex-row pb-8 bg-[#131418] bg-opacity-10 ">
             <div className="w-full lg:w-1/2 xl:w-1/2 flex flex-col justify-center pt-10 lg:pt-0 xl:pt-0 px-4 lg:px-20 xl:px-20" data-aos="zoom-in-right" data-aos-duration="2000">
                 <div>
                     <p className="font-inter text-[21px] font-normal text-secondary leading-[36px] pl-6">

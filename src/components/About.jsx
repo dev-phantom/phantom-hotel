@@ -11,7 +11,7 @@ const About = () => {
     }, []);
 
     return ( 
-        <div className="w-full p-0 lg:p-10 xl:p-10 flex flex-col overflow-x-hidden">
+        <div className="w-full bg-[#222] p-0 lg:p-10 xl:p-10 flex flex-col overflow-x-hidden">
             <div className="flex w-full flex-col lg:flex-row xl:flex-row justify-center items-center px-5 lg:px-[4rem] xl:px-[4rem]">
 
                 <div className="w-full lg:w-1/2 xl:w-1/2 flex flex-col gap-8">
@@ -27,10 +27,10 @@ const About = () => {
 
                 <div className="w-full lg:w-1/2 xl:w-1/2 lg:pr-[6rem] pt-10 lg:pt-0 xl:pt-0 xl:pr-[6rem] pl-8">
                     <div>
-                       <h1 className="font-interb text-[28px] lg:text-[40px] xl:text-[40px] text-secondary lg:leading-[54px] xl:leading-[54px]">Flexibility and options to suit your lifestyle.</h1> 
+                       <h1 className="font-interb text-[28px] lg:text-[40px] xl:text-[40px] text-white lg:leading-[54px] xl:leading-[54px]">Flexibility and options to suit your lifestyle.</h1> 
                     </div>
                     <div className="py-5">
-                       <p className="font-inter text-[18px] font-normal text-secondary leading-[32px]">
+                       <p className="font-inter text-[18px] font-normal text-white leading-[32px]">
                             You need it? We got it. We make finding your next home easy, 
                             comfortable, and simple. From our happiness guarantee to our selective 
                             roommate finder option. We provide you the flexibility that you most desire.
@@ -44,7 +44,7 @@ const About = () => {
 
             </div>
 
-            <div className="text-center my-10 px-10 lg:px-0 xl:px-0">
+            <div className="text-center text-white my-10 px-10 lg:px-0 xl:px-0">
                 Your property with us and be Confident that Your Room will be Filled Out!
             </div>
 
