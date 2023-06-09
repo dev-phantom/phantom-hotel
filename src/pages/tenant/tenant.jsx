@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Navbar from "../../components/Navbar";
 
 const AddProperty = () => {
   const [name, setName] = useState("");
@@ -19,7 +20,11 @@ const AddProperty = () => {
   };
 
   return (
-    <div className="w-full  bg-[#222] px-4 overflow-x-hidden lg:px-40 lg:px-40 py-[5rem]">
+    <>
+      <div className="bg-[#222]">
+        <Navbar />
+      </div>
+      <div className="w-full  bg-[#222] px-4 overflow-x-hidden lg:px-40 lg:px-40 py-[5rem]">
       <div className="w-full pb-10 shadow-[0_4px_63px_rgba(0,0,0,0.15)] rounded-[10px]">
         <div>
           <h3 className="font-popins font-bold py-10 text-white text-center text-[28px]">
@@ -161,7 +166,7 @@ const AddProperty = () => {
               className="w-full h-[151px] bg-[#F9F9F9] rounded border-2 p-4 border-[#E6E6E6]"
             ></textarea>
           </div>
-          
+
           <div className="flex justify-center items-center my-10">
             <button className="bg-primary w-[250px] h-[58px] lg:w-[513px] lg:h-[69.01px] xl:w-[513px] xl:h-[69.01px] flex justify-center items-center text-lg lg:text-xl text-white rounded-[10px]">
               Add New Property
@@ -169,7 +174,9 @@ const AddProperty = () => {
           </div>
         </form>
       </div>
-    </div>
+      </div>
+
+    </>
   );
 };
 

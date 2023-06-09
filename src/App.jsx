@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <CartProvider>
-      <div className="app">
+      <div>
         <Outlet />
       </div>
     </CartProvider>
