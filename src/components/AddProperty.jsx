@@ -6,8 +6,8 @@ const AddProperty = () => {
     const [price, setPrice] = useState("")
     const [unit, setUnit] = useState(0)
     return ( 
-        <div className="w-full bg-[#222] px-4 overflow-x-hidden lg:px-40 lg:px-40 pb-[10rem]" >
-            <div className="w-full pb-10 shadow-[0_4px_63px_rgba(0,0,0,0.15)] border-2 border-gray-500 rounded-[10px]">
+        <div className="w-full bg-[#222] px-4 overflow-x-hidden lg:px-40 lg:px-40 py-[5rem] pb-[10rem]" >
+            <div className="w-full pb-10 shadow-[0_4px_63px_rgba(0,0,0,0.15)] border-2 border-gray-500 rounded-[10px]" data-aos="zoom-in" data-aos-duration="2000">
                 <div>
                     <h3 className="font-popins font-bold py-10 text-primary text-center text-[28px]">Add A New Property</h3>
                 </div>
