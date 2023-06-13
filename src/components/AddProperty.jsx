@@ -5,8 +5,8 @@ const AddProperty = () => {
     const [address, setAddress] = useState("")
     const [price, setPrice] = useState("")
     const [unit, setUnit] = useState(0)
-    return ( 
-        <div className="w-full bg-[#222] px-4 overflow-x-hidden lg:px-40 lg:px-40 py-[5rem] pb-[10rem]" >
+    return (
+        <div className="w-full bg-[#222] px-4 overflow-x-hidden lg:px-40 py-[5rem] pb-[10rem]" >
             <div className="w-full pb-10 shadow-[0_4px_63px_rgba(20,15,15,0.5)] border-2 border-gray-500 rounded-[10px]" data-aos="zoom-in" data-aos-duration="2000">
                 <div>
                     <h3 className="font-popins font-bold py-10 text-primary text-center text-[28px]">Add A New Property</h3>
@@ -20,11 +20,11 @@ const AddProperty = () => {
 
                             <div className="">
                                 <input
-                                type="text"
-                                className="block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
-                                placeholder="Enter Name" 
-                                value={name}
-                                onChange= {(e) => setName(e.target.value)}
+                                    type="text"
+                                    className="block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
+                                    placeholder="Enter Name"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                 />
                             </div>
                         </div>
@@ -34,11 +34,11 @@ const AddProperty = () => {
                             </div>
                             <div className="">
                                 <input
-                                type="text"
-                                className="block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
-                                placeholder="Enter Address" 
-                                value={address}
-                                onChange= {(e) => setAddress(e.target.value)}
+                                    type="text"
+                                    className="block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
+                                    placeholder="Enter Address"
+                                    value={address}
+                                    onChange={(e) => setAddress(e.target.value)}
                                 />
                             </div>
                         </div>
@@ -48,11 +48,11 @@ const AddProperty = () => {
                             </div>
                             <div className="">
                                 <input
-                                type="number"
-                                className="block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
-                                placeholder="Enter Unit" 
-                                value={unit}
-                                onChange= {(e) => setUnit(e.target.value)}
+                                    type="number"
+                                    className="block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
+                                    placeholder="Enter Unit"
+                                    value={unit}
+                                    onChange={(e) => setUnit(e.target.value)}
                                 />
                             </div>
                         </div>
@@ -61,66 +61,69 @@ const AddProperty = () => {
                                 <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>city <span className='text-primary'>*</span></label>
                             </div>
                             <div >
-                                <Dropdown value={"select city"} />
+                                <Dropdown value={"select city"}
+                                />
                             </div>
                         </div>
                         <div>
                             <div className='py-2 '>
                                 <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>state <span className='text-primary'>*</span></label>
                             </div>
-                            <div >
+                            <div>
                                 <Dropdown value={"select state"} />
                             </div>
                         </div>
                         <div>
-                            <div className='py-2 '>
+                            <div className='py-2 z-9999'>
                                 <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>room type <span className='text-primary'>*</span></label>
                             </div>
                             <div >
                                 <Dropdown value={"select room type"} />
                             </div>
                         </div>
-                        
+
                         <div>
                             <div className='py-2 '>
                                 <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>price <span className='text-primary'>*</span></label>
                             </div>
                             <div className="">
                                 <input
-                                type="number"
-                                className="block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
-                                placeholder="Enter Price" 
-                                value={price}
-                                onChange= {(e) => setPrice(e.target.value)}
+                                    type="number"
+                                    className="block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
+                                    placeholder="Enter Price"
+                                    value={price}
+                                    onChange={(e) => setPrice(e.target.value)}
                                 />
                             </div>
                         </div>
                         <div>
-                            <div className='py-2 '>
+                            <div className='py-2 z-'>
                                 <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>room type <span className='text-primary'>*</span></label>
                             </div>
                             <div >
-                                <Dropdown value={"select room type"} />
+                                <Dropdown value={"select room type"}
+                                    className='z-0'
+                                />
                             </div>
                         </div>
                     </div>
                     <div className='px-10'>
-                       <div className='py-2 '>
+                        <div className='py-2 '>
                             <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>Description <span className='text-primary'>*</span></label>
-                        </div> 
+                        </div>
                         <textarea placeholder="Enter Description" className='w-full h-[151px] bg-[#F9F9F9] rounded border-2 p-4 border-[#E6E6E6]'></textarea>
                     </div>
                     <div className='px-10'>
-                       <div className='py-2 '>
+                        <div className='py-2 '>
                             <label htmlFor="" className='text-white font-semibold font-popins text-[17px] capitalize'>Upload Photos</label>
-                        </div> 
+                        </div>
                         <div className="">
                             <input
                                 type="file"
                                 className="flex justify-center items-center w-full px-4 py-[3rem] text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-dashed border-primary rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none"
-                                placeholder="Drag your images here, or browse" 
+                                placeholder="Drag your images here, or browse"
                                 value={name}
-                                onChange= {(e) => setName(e.target.value)}
+                                onChange={(e) => setName(e.target.value)}
                             />
                         </div>
                     </div>
@@ -130,7 +133,7 @@ const AddProperty = () => {
                 </form>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default AddProperty;
